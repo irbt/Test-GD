@@ -1,0 +1,33 @@
+/* titre H1*/
+/* c'est pour un effet au click */
+h1{
+    text-align:center;
+  }
+  
+  /* animation au click */
+  
+  .clickAnim{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgb(233, 74, 0);
+      position: absolute;
+      z-index: 9000;
+      transform: scale(0);
+  transform-origin:center ;
+  animation: clickAnim 1s ease-in-out;
+  }
+  
+  @keyframes clickAnim{
+      0%{
+          transform: scale(0);
+      }
+      50%{
+          transform: scale(2);
+          opacity: 1;
+      }
+      0%{
+          transform: scale(0);
+          opacity: 0;
+      }
+  }
